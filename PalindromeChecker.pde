@@ -19,7 +19,7 @@ public boolean palindrome(String word)
   //your code here
   word = noSpaces(word);
   word = onlyLetters(word);
-  word.toLowerCase();
+  word = word.toLowerCase();
   if (reverse(word).equals(word)) {
     return true;
   }
@@ -54,5 +54,3 @@ public String onlyLetters(String str)
   } 
   return sNew;
 }
-
-
